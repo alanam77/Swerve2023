@@ -22,10 +22,12 @@ import frc.robot.commands.Auto.PreloadParkPlusLeft;
 import frc.robot.commands.Auto.PureChargeNoPreload;
 import frc.robot.commands.Auto.ScoreOnly;
 import frc.robot.commands.Auto.StrafeOutAuto;
+import frc.robot.commands.Auto.troy;
 import frc.robot.commands.TeleOp.ZeroGyro;
 import frc.robot.subsystems.Elevator;
 import frc.robot.subsystems.NewSwerveDrivetrain;
 import edu.wpi.first.wpilibj2.command.Command;
+import edu.wpi.first.wpilibj2.command.button.CommandPS4Controller;
 import edu.wpi.first.wpilibj2.command.button.Trigger;
 
 /**
@@ -57,10 +59,12 @@ public class RobotContainer {
   OdomTest odomTest = new OdomTest(swerve);
   private final BumpTwoPieceLeft bumpTwoPieceLeft = new BumpTwoPieceLeft(swerve, elevator);
   private final StrafeOutAuto strafeOutAuto = new StrafeOutAuto(swerve, elevator);
+  private final troy troyTest = new troy(swerve, elevator);
 
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {
     // Configure the button bindings
+    autoSelect.addOption("Troy's Test", troyTest);
     autoSelect.addOption("PreloadH and Charge Station", chargePreload);
     autoSelect.addOption("PreloadM and Charge Station", preloadMidCharge);
     autoSelect.addOption("Charge Staton Only", chargeOnly);
