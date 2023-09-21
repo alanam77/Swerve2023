@@ -67,7 +67,7 @@ public class FollowPath extends CommandBase {
     rotErr = Math.toDegrees(ExtraMath.simpleAngleError(robotPoint.getAngleRad(), wantedPoint.getAngleRad()));
     double rot = ExtraMath.clip(veloc[2], 3.4);
 
-    drivetrain.setChassisSpeeds(x,y,rot);
+    drivetrain.setChassisSpeeds(x * 0.25,y * 0.25,rot * 0.75);
 
     field.setRobotPose(robotPoint.getX(), robotPoint.getY(), Rotation2d.fromRadians(robotPoint.getAngleRad()));
     SmartDashboard.putString("Robot Point", formatter.format(robotPoint.getX())  + ", " + formatter.format(robotPoint.getY()) + ", " + formatter.format(Math.toDegrees(robotPoint.getAngleRad())));

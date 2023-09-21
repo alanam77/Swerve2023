@@ -64,22 +64,22 @@ public class RobotContainer {
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {
     // Configure the button bindings
-    autoSelect.addOption("Troy's Test", troyTest);
-    autoSelect.addOption("PreloadH and Charge Station", chargePreload);
+    // autoSelect.addOption("Troy's Test", troyTest);
+    // autoSelect.addOption("PreloadH and Charge Station", chargePreload);
     autoSelect.addOption("PreloadM and Charge Station", preloadMidCharge);
-    autoSelect.addOption("Charge Staton Only", chargeOnly);
-    autoSelect.addOption("PreloadH Charge and Park", chargeOver);
+    // autoSelect.addOption("Charge Staton Only", chargeOnly);
+    // autoSelect.addOption("PreloadH Charge and Park", chargeOver);
     // autoSelect.addOption("Charge Station With Extra Points", chargeStation);
     autoSelect.setDefaultOption("PreloadH and Park", preloadAndPark);
-    autoSelect.setDefaultOption("PreloadM and Park", preloadMidPark);
-    autoSelect.addOption("Park", park);
-    autoSelect.addOption("Score Only", scoreOnly);
+    // autoSelect.setDefaultOption("PreloadM and Park", preloadMidPark);
+    // autoSelect.addOption("Park", park);
+    // autoSelect.addOption("Score Only", scoreOnly);
     // autoSelect.addOption("Odom Test", odomTest);
     autoSelect.addOption("2 Piece Right Side", preloadParkPlus);
 
-    autoSelect.addOption("2 Piece Left Side", preloadParkPlusLeft);
-    autoSelect.addOption("Strafe out of charge", strafeOutAuto);
-    autoSelect.addOption("Bump Side", bumpTwoPieceLeft);
+    // autoSelect.addOption("2 Piece Left Side", preloadParkPlusLeft);
+    // autoSelect.addOption("Strafe out of charge", strafeOutAuto);
+    // autoSelect.addOption("Bump Side", bumpTwoPieceLeft);
     SmartDashboard.putData(autoSelect);
     configureButtonBindings();
   }

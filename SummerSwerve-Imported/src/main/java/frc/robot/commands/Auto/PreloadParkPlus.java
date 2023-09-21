@@ -38,17 +38,17 @@ public class PreloadParkPlus extends SequentialCommandGroup {
     // new FollowPath(drivetrain, Paths.ScoreToCollectInBetween, false).raceWith(new AutoControlPower(elevator, 0, 0, 90, false)),
     new FollowPath(drivetrain, Paths.ScoreToCollect, true).raceWith(new AutoControlPower(elevator, 0, 0, 90, false)),
     // new AutoControl(elevator, 0, 0, 186, false, 0),
-    new DriveTime(drivetrain, 0.2, 0, 0, 0.6).raceWith(new AutoControlPower(elevator, 0, 0, 225, false, -0.35)),
+    new DriveTime(drivetrain, 0.2, 0, 0, 1.5).raceWith(new AutoControlPower(elevator, 0, 0, 225, false, -0.35)),
     new AutoControl(elevator, 0, 0,100, false, 0),
     // new FollowPath(drivetrain, Paths.CollectToScoreInBetween, false).raceWith(new AutoControlPower(elevator, 0, 0, 75, false, 0)),
     new FollowPath(drivetrain, Paths.CollectToScore, true).raceWith(new AutoControlPower(elevator, 0, 0, 90, false)),
     new DriveTime(drivetrain, 0, 0, 0, 0.5).raceWith(new AutoControlPower(elevator, 0, 0, 90, false, 0.4)),
-    new FollowPath(drivetrain, Paths.ScoreToCollect2Inbetween, true).raceWith(new AutoControlPower(elevator, 0, 0, 90, false)),
-    new FollowPath(drivetrain, Paths.ScoreToCollect2, true).raceWith(new AutoControlPower(elevator, 0, 0, 210, false)),
-    new DriveTime(drivetrain, 0.2, 0, 0, 0.6).raceWith(new AutoControlPower(elevator, 0, 0, 225, false, -0.35)),
-    new FollowPath(drivetrain, Paths.CollectToScore2Inbeween, true).raceWith(new AutoControlPower(elevator, 0, 0, 90, false)),
-    new FollowPath(drivetrain, Paths.CollectToScore2, true).raceWith(new AutoControlPower(elevator, 0, 0, 90, false)),
-    new DriveTime(drivetrain, 0, 0, 0, 0.3).raceWith(new AutoControlPower(elevator, 0, 0, 120, false, 0.4))
+    new FollowPath(drivetrain, Paths.ScoreToCollect2Inbetween, true).raceWith(new AutoControlPower(elevator, 0, 0, 90, false))
+    // new FollowPath(drivetrain, Paths.ScoreToCollect2, true).raceWith(new AutoControlPower(elevator, 0, 0, 210, false)),
+    // new DriveTime(drivetrain, 0.2, 0, 0, 0.6).raceWith(new AutoControlPower(elevator, 0, 0, 225, false, -0.35)),
+    // new FollowPath(drivetrain, Paths.CollectToScore2Inbeween, true).raceWith(new AutoControlPower(elevator, 0, 0, 90, false)),
+    // new FollowPath(drivetrain, Paths.CollectToScore2, true).raceWith(new AutoControlPower(elevator, 0, 0, 90, false)),
+    // new DriveTime(drivetrain, 0, 0, 0, 0.3).raceWith(new AutoControlPower(elevator, 0, 0, 120, false, 0.4))
     );
   }
 }

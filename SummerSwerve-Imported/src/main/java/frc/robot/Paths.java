@@ -29,7 +29,7 @@ public class Paths {
     public final static List<Point> ScoreToCollect = Arrays.asList(new Point(0, -0.3, Math.toRadians(0)), new Point(5.45, -0.09, Math.toRadians(0)));
     public final static List<Point> CollectToScoreInBetween = Arrays.asList(new Point(5.38, -0.09, Math.toRadians(0)), new Point(3.3, -0.3, Math.toRadians(180)));
     public final static List<Point> CollectToScore = Arrays.asList(new Point(5.38, -0.3, Math.toRadians(180)), new Point(-0.4, -0.3 + 0.4, Math.toRadians(180)));
-    public final static List<Point> ScoreToCollect2Inbetween = Arrays.asList(new Point(0 + -0.4, -0.3 + .4, Math.toRadians(0)), new Point(5.45 + -0.4, -0.09 + .4, Math.toRadians(45)));
+    public final static List<Point> ScoreToCollect2Inbetween = Arrays.asList(new Point(-0.4, 0.1, Math.toRadians(0)), new Point(5.41, 0.31, Math.toRadians(0)));
     public final static List<Point> ScoreToCollect2 = Arrays.asList(new Point(5.45 + -0.4, -0.09 + .4, Math.toRadians(45)), new Point(5.45 + -0.4, -0.09 + .4 + 1.2, Math.toRadians(45)));
     public final static List<Point> CollectToScore2Inbeween = Arrays.asList(new Point(5.45 + -0.4, -0.09 + .4 + 1.2, Math.toRadians(45)), new Point(5.45 + -0.4, -0.09 + .4, Math.toRadians(60)));
     public final static List<Point> CollectToScore2 = Arrays.asList(new Point(5.45 + -0.4, -0.09 + .4, Math.toRadians(60)), new Point(0 + -0.4, .4, Math.toRadians(180)));
