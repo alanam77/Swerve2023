@@ -62,8 +62,8 @@ public class SwerveCommand extends CommandBase {
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    double scale = 0.25; //0.37 //1
-    double rotScale = 0.35; //.75
+    double scale = 0.6; //0.37 //1
+    double rotScale = 0.6; //.75
     double speedToCoast = 3.5;
     if(controller.getRightTriggerAxis() > 0.1) {
       scale = 0.13;
